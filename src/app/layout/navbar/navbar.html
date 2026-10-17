@@ -1,0 +1,38 @@
+<nav class="flex items-center justify-between bg-gray-50 px-6 py-4 shadow-lg">
+    <!-- Brand -->
+    <a routerLink="/" class="text-xl font-bold text-gray-900">
+        CodeWithPatel
+    </a>
+
+    <!-- Navigation -->
+    <div class="flex items-center gap-6">
+
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link hidden lg:block">
+            Home
+        </a>
+
+
+        <a routerLink="/about" routerLinkActive="active" class="nav-link">
+            About
+        </a>
+
+        <a routerLink="/service" routerLinkActive="active" class="nav-link">
+            Services
+        </a>
+
+        <a routerLink="/contact" routerLinkActive="active" class="nav-link">
+            Contact
+        </a>
+    </div>
+
+    <!-- Authentication -->
+    <div class="flex items-center gap-4">
+        <a routerLink="/login" class="nav-link">Login</a>
+
+        <a routerLink="/signup"
+            class="rounded-lg bg-[#ff6347] px-4 py-2 font-medium text-white transition hover:bg-[#e5533d]">
+            Sign Up
+        </a>
+    </div>
+</nav>
